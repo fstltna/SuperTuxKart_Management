@@ -10,7 +10,7 @@ my $FileEditor = "/bin/nano";
 my $StartScript = "/home/stkowner/bin/supertuxkart";
 my $SUPERTUXKARTDIR = "/home/stkowner/install";
 my $BackupCommand = "/home/stkowner/SuperTuxKart_Backup/stkbackup.pl";
-my $STKLog = "/home/cmowner/CoffeeMud/mud.log";
+my $STKLog = "SUPERTUXKARTDIR/SuperTuxKartScreen.log";
 my $Pager = "/usr/bin/less";
 my $STKMCDir = "/home/stkowner/SuperTuxKart_Management";
 my $BackupToolDir = "/home/stkowner/SuperTuxKart_Backup";
@@ -153,7 +153,7 @@ sub MainMenu
                                       '4', 'Turn Off Respawn',
                                       '5', 'Turn Respawn On',
                                       '6', 'Edit mudUNIX.sh',
-                                      '7', 'Edit coffeemud.ini',
+                                      '7', 'Edit myconfig.xml',
                                       '8', 'Backup STK',
                                       '9', 'View STK Log',
                                       '10', 'Kill STK Process',
@@ -211,8 +211,8 @@ while (-1)
 	}
 	elsif ($menuselection eq "7")
 	{
-		# Edit coffeemud.ini file
-		system("$FileEditor $SUPERTUXKARTDIR/coffeemud.ini");
+		# Edit myconfig.xml file
+		system("$FileEditor $SUPERTUXKARTDIR/share/supertuxkart/data/myconfig.xml");
 	}
 	elsif ($menuselection eq "8")
 	{

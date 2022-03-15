@@ -2,9 +2,6 @@
 Allows you to manage your Super Tux Kart server with a text based GUI - 
 Official support sites: [Official Github Repo](https://github.com/fstltna/SuperTuxKart_Management)
 
-
-![Coffee MUD Sample Screen](https://pocketmud.com/coffee_mud.png) 
-
 ---
 
 Edit "stkmc" and change the settings at the top if your Super Tux Kart server is not in /home/stkowner/install.
