@@ -194,7 +194,7 @@ while (-1)
 	elsif ($menuselection eq "3")
 	{
 		$d->msgbox( text => "To exit the Super Tux Kart Server console and return to STKMC press CTRL-A CTRL-D" );
-		system("screen -r SuperTuxKart");
+		system("screen -r Supertuxkart");
 	}
 	elsif ($menuselection eq "4")
 	{
