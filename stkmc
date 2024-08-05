@@ -23,13 +23,18 @@ my $DEBUG_MODE = "off";
 # No changes below here
 ###################################################
 
-my $STKMC_ver = "1.0";
+my $STKMC_ver = "1.1";
 my $Record = "false";	# Are results saved?
 my $TempDir = "/tmp";
 my $RobotName = "";
 my $BotVersion = "";
 my $UserName = "";
 my $ServerStatus = "foo";
+
+if ($ENV{'EDITOR'})
+{
+        $FileEditor = $ENV{'EDITOR'};
+}
 
 sub PrintDebugCommand
 {
